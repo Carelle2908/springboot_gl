@@ -2,6 +2,14 @@ plugins {
 	id "base"
 	id "org.jetbrains.kotlin.jvm" apply false // https://youtrack.jetbrains.com/issue/KT-30276
 	id "io.spring.nohttp" version "0.0.11"
+	 id "org.sonarqube" version "4.4.1.3373"
+}
+sonar {
+  properties {
+    property "sonar.projectKey", "Carelle2908_springboot_gl"
+    property "sonar.organization", "carelle2908"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 description = "Spring Boot Build"
